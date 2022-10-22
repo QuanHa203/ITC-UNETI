@@ -1,0 +1,205 @@
+:root {
+    --button-text-color: #fff;
+    --button-color: #0D80E8;
+    --main-text-color: #0094DE;
+    --sub-text-color: #C9C9C9;
+    --box-text-color: rgba(96, 96, 96, 0.7);
+    --point-color: #98C8F4;
+}
+
+
+::selection {
+    content: "";
+    color: #000 ;
+    background-color: var(--point-color);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    padding: 7.4rem 0;
+    margin: auto;
+}
+
+.no-user-select {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.common-title-text {
+    color: var(--main-text-color);
+    font-size: 3.2em;
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Common nav */
+.common-nav {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    -webkit-user-select: none;
+    user-select: none;
+    background-image: url(../img/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.common-path {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: var(--main-text-color);
+    font-size: 6em;
+    text-align: center;
+    margin: auto 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.common-box-shadow {
+    box-shadow: 0 0 0.8em 0 var(--main-text-color);
+}
+
+/* Button */
+.common-btn {
+    position: relative;
+    margin-top: 2.8em;
+    padding: 1.2em 2.8em;
+    border: none;
+    border-radius: 0.5em;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.common-btn > a {
+    color: var(--button-text-color);
+    font-size: 2.4em;
+    text-decoration: none;
+    z-index: 0;
+}
+
+.btn-bgc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 202%;
+    height: 102%;
+    background-image: linear-gradient(-90deg, var(--button-color), #3d99ed, var(--button-color));
+    z-index: -1;
+    transition: all  0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+.common-btn:hover .btn-bgc { 
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.is-click {
+    background-color: var(--button-color) !important;
+    border: var(--button-color) !important;
+}
+
+.is-click > a {
+    color: #fff !important;
+}
+
+.slide-process-bar {
+    width: 100%;
+    height: 0.4em;
+    background-color: var(--main-text-color);
+    border-radius: 0.1em;
+    margin-top: 4.8em;
+}
+
+/* Point navigation */
+.point-nav {
+    width: 100%;
+    margin-top: 10em;
+    text-align: center;
+}
+
+.point-nav > i {
+    color: var(--point-color);
+    cursor: pointer;
+    font-size: 1.4em;
+    width: 2.4em;
+}
+
+.choose-point {
+    color: var(--main-text-color) !important;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Slide process bar */
+.slide-process-bar {
+    width: 100%;
+    height: 0.4em;
+    background-color: var(--main-text-color);
+    border-radius: 0.1em;
+}
+
+/* Animation */
+.scale-animator {
+    animation: scale-animator ease-in 1s;
+}
+
+/* Javascript */
+.js-nav-bar-icon > span:nth-child(1) {
+    top: 9px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background-color: var(--main-text-color) !important;
+}
+
+.js-nav-bar-icon > span:nth-child(2) {
+    opacity: 0;
+}
+
+.js-nav-bar-icon > span:nth-child(3) {
+    top: -9px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    background-color: var(--main-text-color) !important;
+}
+
+.js-sticky-header {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+    width: 100% !important;
+    height: 80px !important;
+    background-color: #000f16 !important;
+    box-shadow: 0 0 50px -10px var(--main-text-color) !important;
+    transition: all 0.4s ease-in-out !important;
+    -webkit-transition: all 0.4s ease-in-out !important;
+}
