@@ -31,3 +31,14 @@ function removeNavBar() {
 
 exitBtn.addEventListener("click", removeNavBar)
 bodyDiv.addEventListener("click", removeNavBar,true)
+
+/* Animation */
+var animations = document.querySelectorAll(".js-animated")
+
+document.addEventListener("scroll", function() {
+    for(var i = 0; i < animations.length; i++) {
+        if(animations[i].offsetTop - window.scrollY < 400) {
+            animations[i].classList.add("active")
+        }
+    }
+})

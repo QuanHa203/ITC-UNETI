@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -66,10 +67,10 @@
         </div>
         <div class="overlay">
             <!-- Live course -->
-            <div id="live-course" class="container">
-                <h2 class="common-title-text">Khóa học trực tiếp</h2>
+            <div id="live-course" class="container js-animated">
+                <h2 class="common-title-text top-to-bottom">Khóa học trực tiếp</h2>
 
-                <div id="live-course-slide" class="common-box-shadow">
+                <div id="live-course-slide" class="common-box-shadow zoom">
                     <div class="live-course-slide-container">
                         <div class="live-course-slide-box">
                             <div class="live-course-slide-image">
@@ -96,77 +97,73 @@
             </div>
             <!-- Free course -->
             <div id="free-courses">
-                <div class="container">
-                    <h2 class="common-title-text">Khóa học miễn phí</h2>
+                <div class="container js-animated">
+                    <h2 class="common-title-text top-to-bottom">Khóa học miễn phí</h2>
 
                     <ul id="free-courses-nav">
-                        <li><button class="common-btn "><a href="">C++</a></button></li>
-                        <li><button class="common-btn is-click"><a href="">C#</a></button></li>
-                        <li><button class="common-btn "><a href="">Web</a></button></li>
-                        <li><button class="common-btn "><a href="">Đồ họa</a></button></li>
+                        <li><button class="bottom-to-top delay-0_2 common-btn "><a href="">C++</a></button></li>
+                        <li><button class="bottom-to-top delay-0_4 common-btn is-click"><a href="">C#</a></button></li>
+                        <li><button class="bottom-to-top delay-0_6 common-btn "><a href="">Web</a></button></li>
+                        <li><button class="bottom-to-top delay-0_8 common-btn "><a href="">Đồ họa</a></button></li>
                     </ul>
 
-                    <div id="free-courses-container">
-                        <div class="free-courses-box common-box-shadow">
-                            <div class="free-courses-image">
-                                <img src="./assets/img/course/CSharp/1.jpg" alt="">
+                    <div id="free-courses-container" class="swiper mySwiper zoom delay-1">
+                        <div class="free-courses-slide swiper-wrapper">
+                            <div class="free-courses-box common-box-shadow swiper-slide">
+                                <div class="free-courses-image">
+                                    <img src="./assets/img/course/CSharp/1.jpg" alt="">
+                                </div>
+    
+                                <div class="free-courses-info">
+                                    <strong>Lập trình C# cơ bản</strong> <br>
+                                    <p><strong>Người dạy: </strong>HowKteam</p>
+                                    <p><strong>Mô tả: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Autem vitae reprehenderit, blanditiis, eligendi sunt ab, sit nisi eaque dicta
+                                        aliquid</p>
+                                    <button class="common-btn">
+                                        <div class="btn-bgc"></div>
+                                        <a href="">Học ngay</a>
+                                    </button>
+                                </div>
                             </div>
-
-                            <div class="free-courses-info">
-                                <strong>Lập trình C# cơ bản</strong> <br>
-                                <p><strong>Người dạy: </strong>HowKteam</p>
-                                <p><strong>Mô tả: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Autem vitae reprehenderit, blanditiis, eligendi sunt ab, sit nisi eaque dicta
-                                    aliquid</p>
-                                <button class="common-btn">
-                                    <div class="btn-bgc"></div>
-                                    <a href="">Học ngay</a>
-                                </button>
+    
+                            <div class="free-courses-box common-box-shadow swiper-slide">
+                                <div class="free-courses-image">
+                                    <img src="./assets/img/course/CSharp/2.jpg" alt="">
+                                </div>
+    
+                                <div class="free-courses-info">
+                                    <strong>Lập trình hướng đối tượng</strong> <br>
+                                    <p><strong>Người dạy: </strong>HowKteam</p>
+                                    <p><strong>Mô tả: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Autem vitae reprehenderit, blanditiis, eligendi sunt ab, sit nisi eaque dicta
+                                        aliquid</p>
+                                    <button class="common-btn">
+                                        <div class="btn-bgc"></div>
+                                        <a href="">Học ngay</a>
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="free-courses-box common-box-shadow swiper-slide">
+                                <div class="free-courses-image">
+                                    <img src="./assets/img/course/CSharp/3.jpg" alt="">
+                                </div>
+    
+                                <div class="free-courses-info">
+                                    <strong>Lập trình winform với C#</strong> <br>
+                                    <p><strong>Người dạy: </strong>HowKteam</p>
+                                    <p><strong>Mô tả: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Autem vitae reprehenderit, blanditiis, eligendi sunt ab, sit nisi eaque dicta
+                                        aliquid</p>
+                                    <button class="common-btn">
+                                        <div class="btn-bgc"></div>
+                                        <a href="">Học ngay</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="free-courses-box common-box-shadow">
-                            <div class="free-courses-image">
-                                <img src="./assets/img/course/CSharp/2.jpg" alt="">
-                            </div>
-
-                            <div class="free-courses-info">
-                                <strong>Lập trình hướng đối tượng</strong> <br>
-                                <p><strong>Người dạy: </strong>HowKteam</p>
-                                <p><strong>Mô tả: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Autem vitae reprehenderit, blanditiis, eligendi sunt ab, sit nisi eaque dicta
-                                    aliquid</p>
-                                <button class="common-btn">
-                                    <div class="btn-bgc"></div>
-                                    <a href="">Học ngay</a>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="free-courses-box common-box-shadow">
-                            <div class="free-courses-image">
-                                <img src="./assets/img/course/CSharp/3.jpg" alt="">
-                            </div>
-
-                            <div class="free-courses-info">
-                                <strong>Lập trình winform với C#</strong> <br>
-                                <p><strong>Người dạy: </strong>HowKteam</p>
-                                <p><strong>Mô tả: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Autem vitae reprehenderit, blanditiis, eligendi sunt ab, sit nisi eaque dicta
-                                    aliquid</p>
-                                <button class="common-btn">
-                                    <div class="btn-bgc"></div>
-                                    <a href="">Học ngay</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="point-nav">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle choose-point"></i>
-                        <i class="fa-solid fa-circle"></i>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -217,6 +214,36 @@
     </footer>
 
     <script src="./assets/js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>

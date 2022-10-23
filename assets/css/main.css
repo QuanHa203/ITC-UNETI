@@ -170,16 +170,19 @@
 }
 
 .introduce-info {
+    opacity: 0;
     width: 40%;
 }
 
 .introduce-info > h2 {
+   
     color: var(--main-text-color);
     font-size: 3.2em;
 
 }
 
 .introduce-info > p {
+   
     font-size: 1.6em;
     color: var(--sub-text-color);
 }
@@ -189,6 +192,7 @@
 }
 
 .introduce-image > img {
+    opacity: 0;
     width: 100%;
     border-radius: 0.2em;
 }
@@ -209,6 +213,7 @@
     margin: 50px 0;
     border-radius: 0.4em;
     background-color: var(--box-text-color);
+    opacity: 0;
 }
 
 .introduce-member-info:last-child {
@@ -262,6 +267,7 @@
 }
 
 #contest-list .contest-sub-list {
+    opacity: 0;
     width: 48%;
     margin: 4.8em 0;
     display: flex;
@@ -321,6 +327,7 @@
 }
 
 .frequent-question-image {
+    opacity: 0;
     width: 50%;
 }
 
@@ -334,6 +341,7 @@
     margin-left: auto;
     font-size: 1.6em;
     color: var(--sub-text-color);
+    opacity: 0;
 }
 
 .frequent-question-text-box {
@@ -422,6 +430,10 @@
 }
 
 /* Comment */
+#comment-container {
+    opacity: 0;
+}
+
 .comment-text {
     position: relative;
     background-color: var(--box-text-color);
@@ -696,6 +708,7 @@
     width: 100%;
     margin-top: 4em;
     border-radius: 0.4em;
+    opacity: 0;
 }
 
 .live-course-slide-container {
@@ -730,6 +743,10 @@
     margin-left: auto;
 }
 
+.live-course-slide-info p {
+    text-align: justify;
+}
+
 .live-course-slide-info > button {
     color: #fff;
     margin-top: 1em;
@@ -745,6 +762,7 @@
     margin-top: 8em;
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 
 #free-courses-nav > li {
@@ -759,6 +777,7 @@
     margin: 0;
     background-color: unset;
     border: 1px solid #fff;
+    opacity: 0;
 }
 
 #free-courses-nav > li > button > a {
@@ -767,26 +786,25 @@
 }
 
 #free-courses-container {
-    display: flex;
-    justify-content: space-between;
     margin-top: 10em;
+    opacity: 0;
 }
 
 .free-courses-box {
     background-color: var(--box-text-color);
-    width: 30%;
-    border-radius: 0.4em;
+    overflow: hidden;
 }
 
 .free-courses-image {
     width: 100%;
-    height: 34%;
+    height: 100%;
 }
 
 .free-courses-image > img {
     width: 100%;
-    height: 100%;
+    height: 192px;
     border-radius: 0.4em;
+    object-fit: cover;
 }
 
 .free-courses-info {
@@ -828,6 +846,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    opacity: 0;
 }
 
 #login-and-register-container > form > .login-and-register-input {
@@ -990,27 +1009,36 @@
 
 .favourite-book-box:last-child {
     width: 50%;
+    opacity: 0;
 }
 
 .favourite-book-box > h5 {
     color: var(--main-text-color);
     font-size: 14px;
     margin-bottom: 12px;
+    opacity: 0;
 }
 
 .favourite-book-box > h1 {
     font-size: 60px;
     color: #fff;
     margin-top: 0;
+    opacity: 0;
 }
 
 .favourite-book-box > p {
     font-size: 16px;
     color: var(--sub-text-color);
+    opacity: 0;
+}
+
+.favourite-book-box button {
+    opacity: 0;
 }
 
 .favourite-book-box > img {
     width: 100%;
+    opacity: 0;
 }
 
 #favourite-book-info {
@@ -1022,6 +1050,7 @@
 
 .favourite-book-info-image {
     width: 40%;
+    opacity: 0;
 }
 
 .favourite-book-info-image > img {
@@ -1037,11 +1066,18 @@
 .favourite-book-info-descript > h2 {
     font-size: 48px;
     color: #fff;
+    opacity: 0;
+}
+
+.favourite-book-info-descript > p {
+    opacity: 0;
 }
 
 .favourite-book-info-descript i {
     color: var(--main-text-color);
+    opacity: 0;
 }
+
 
 #favourite-book-data {
     margin-top: 120px;
@@ -1056,6 +1092,7 @@
     background-color: var(--box-text-color);
     border-radius: 4px;
     padding: 40px 24px;
+    opacity: 0;
 }
 
 .favourite-book-data-box > h6 {
@@ -1098,6 +1135,7 @@
     font-size: 24px;
     font-weight: bold;
     margin: 30px 0;
+    opacity: 0;
 }
 
 #book-inside-box {
@@ -1128,6 +1166,10 @@
    
 }
 
+#comment-about-book-container {
+    opacity: 0;
+}
+
 #comment-about-book-background {
     width: 100%;
 }
@@ -1135,6 +1177,7 @@
 #comment-about-book-background > img {
     position: absolute;
     width: 100%;
+    opacity: 0;
 }
 
 #comment-about-book .container {
@@ -1200,7 +1243,7 @@
 }
 
 #another-book-container {
-
+    opacity: 0;
 }
 
 #another-book-slide {
@@ -1248,7 +1291,7 @@
 
 /* Review about book */
 #review-about-book {
-    
+
 }
 
 #review-about-book-box {
@@ -1275,6 +1318,7 @@
     background-color: var(--box-text-color);
     border: 1px solid rgba(13, 128, 232, 0.6);
     border-radius: 4px;
+    opacity: 0;
 }
 
 #review-about-book-form > textarea {
@@ -1288,10 +1332,11 @@
     color: #fff;
     background-color: var(--box-text-color);
     resize: vertical;
+    opacity: 0;
 }
 
 #review-about-book-form > button {
-
+    opacity: 0;
 }
 
 #review-about-book-form > button > a {
@@ -1304,6 +1349,7 @@
 
 #review-about-book-image > img {
     width: 100%;
+    opacity: 0;
 }
 
             /* activity.html */
@@ -1333,6 +1379,7 @@
     width: 20%;
     text-decoration: none;
     z-index: 1;
+    opacity: 0;
 }
 
 .outstanding-activity-box {
@@ -1414,6 +1461,7 @@
 
 #recruit-member-image {
     width: 40%;
+    opacity: 0;
 }
 
 #recruit-member-image > img {
@@ -1426,6 +1474,7 @@
 
 #recruit-member-box {
     width: 50%;
+    opacity: 0;
 }
 
 #recruit-member-box > h6 {
@@ -1461,6 +1510,7 @@
 
 #advise-laptop-box {
     width: 50%;
+    opacity: 0;
 }
 
 #advise-laptop-box > h6 {
@@ -1495,6 +1545,7 @@
 #advise-laptop-image {
     width: 40%;
     border-radius: 4px;
+    opacity: 0;
 }
 
 #advise-laptop-image > img {
@@ -1516,18 +1567,21 @@
     color: var(--main-text-color);
     font-size: 14px;
     font-weight: 400;
+    opacity: 0;
 }
 
 #activity-journey-box > h2 {
     color: #fff;
     font-size: 48px;
     margin-top: 4px;
+    opacity: 0;
 }
 
 #activity-journey-box > p {
     color: var(--sub-text-color);
     font-size: 16px;
     line-height: 1.6;
+    opacity: 0;
 }
 
 #activity-journey-image {
@@ -1540,6 +1594,7 @@
     margin-bottom: 2%;
     display: flex;
     justify-content: space-between;
+    opacity: 0;
 }
 
 .activity-journey-image-size-m {
@@ -1568,6 +1623,10 @@
 
 }
 
+#seminar-and-workshop-container {
+    opacity: 0;
+}
+
 #seminar-and-workshop-title {
     text-align: center;
 }   
@@ -1577,12 +1636,14 @@
     color: var(--main-text-color);
     font-size: 14px;
     font-weight: 400;
+    opacity: 0;
 }
 
 #seminar-and-workshop-title > h2 {
     color: #fff;
     font-size: 48px;
     margin-top: 4px;
+    opacity: 0;
 }
 
 #seminar-and-workshop-slide {
@@ -1627,6 +1688,10 @@
 
 }
 
+#another-activity-container {
+    opacity: 0;
+}
+
 #another-activity-container .swiper-pagination > span {
     margin: 0 8px !important;
     padding: 0 20px;
@@ -1643,12 +1708,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.another-activity-slide-box {
-    width: 100%;
-    animation: left-to-right 1s;
-    animation-delay: 1s;
 }
 
 .another-activity-image {
@@ -1705,7 +1764,7 @@
 }
 
 #hot-news-container {
-    height: 600px;;
+    height: 600px;
 }
 
 #hot-news-image {
@@ -1723,6 +1782,7 @@
     width: 66.6666%;
     padding: 0 4px 4px 0;
     overflow: hidden;
+    opacity: 0;
 }
 
 #hot-news-main-image > a {
@@ -1807,6 +1867,7 @@
     width: 100%;
     height: 50%;
     overflow: hidden;
+    opacity: 0;
 }
 
 .common-hot-news-sub-image-1:first-child {
@@ -1885,6 +1946,7 @@
     width: 33.333%;
     height: 100%;
     overflow: hidden;
+    opacity: 0;
 }
 
 .common-hot-news-sub-image-2:nth-child(1) {
@@ -2036,6 +2098,7 @@
     margin-bottom: 60px;
     margin-top: 0;
     padding-top: 80px;
+    opacity: 0;
 }
 
 .recent-news-main-box {
@@ -2044,6 +2107,7 @@
     align-items: center;
     height: 30%;
     margin: 30px 0;
+    opacity: 0;
 }
 
 .recent-news-main-image {
@@ -2096,7 +2160,6 @@
 }
 
 #recent-news-sub {
-
 }
 
 
@@ -2105,6 +2168,7 @@
     justify-content: space-between;
     align-items: flex-start;
     margin: 30px 0;
+    opacity: 0;
 }
 
 .recent-news-sub-box:first-child {
@@ -2152,17 +2216,20 @@
     color: var(--main-text-color);
     font-size: 32px;
     margin: 0;
+    opacity: 0;
 }
 
 #recent-news-register > p {
     font-size: 16px;
     color: var(--sub-text-color);
     margin: 20px 0;
+    opacity: 0;
 }
 
 #recent-news-register > form {
     display: flex;
     width: 100%;
+    opacity: 0;
 }
 
 #recent-news-register > form > input {
@@ -2221,35 +2288,134 @@
 
 /* Animated */
 @keyframes left-to-right {
-    0% {
-        transform: translateX(-50%);
-        opacity: 0.1;
+    from {
+        transform: translateX(-100%);
     }
 
-    100% {
+    to {
         transform: translateX(0%);
         opacity: 1;
     }
 }
 
 @keyframes right-to-left {
-    0% {
-        transform: translateX(50%);
-        opacity: 0.1;
+    from {
+        transform: translateX(100%);
     }
 
-    100% {
+    to {
         transform: translateX(0%);
         opacity: 1;
     }
 }
 
-@keyframes next-slide {
-    0% {
-        width: 0%;
+@keyframes bottom-to-top {
+    from {
+        transform: translateY(100%);
     }
 
-    100% {
-        width: 100%;
+    to {
+        transform: translateY(0%);
+        opacity: 1;
     }
+}
+
+@keyframes top-to-bottom {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-rotate {
+    from {
+        transform: scale(0);
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: scale(1);
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.active .right-to-left {
+    animation: right-to-left 1s ease-in-out forwards;
+}
+
+.active .left-to-right {
+    animation: left-to-right 1s ease-in-out forwards;
+}
+
+.active .top-to-bottom {
+    animation: top-to-bottom 1s ease-in-out forwards;
+}
+
+.active .bottom-to-top {
+    animation: bottom-to-top 1s ease-in-out forwards;
+}
+
+.active .zoom {
+    animation: zoom 1s ease-in-out forwards;
+}
+
+.active .zoom-rotate {
+    animation: zoom-rotate 1s ease-in-out forwards;
+}
+
+.delay-0_2 {
+    animation-delay: 0.2s !important;
+}
+
+.delay-0_4 {
+    animation-delay: 0.4s !important;
+}
+
+.delay-0_6 {
+    animation-delay: 0.6s !important;
+}
+
+.delay-0_8 {
+    animation-delay: 0.8s !important;
+}
+
+.delay-1 {
+    animation-delay: 1s !important;
+}
+
+.delay-1_2 {
+    animation-delay: 1.2s !important;
+}
+
+.delay-1_4 {
+    animation-delay: 1.4s !important;
+}
+
+.delay-1_6 {
+    animation-delay: 1.6s !important;
+}
+
+
+.delay-1_8 {
+    animation-delay: 1.8s !important;
+}
+
+.delay-2 {
+    animation-delay: 2s !important;
 }
