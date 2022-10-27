@@ -1009,7 +1009,6 @@
 
 .favourite-book-box:last-child {
     width: 50%;
-    opacity: 0;
 }
 
 .favourite-book-box > h5 {
